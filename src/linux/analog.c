@@ -13,9 +13,9 @@
 #include "internal.h" // report_errno
 #include "sched.h" // sched_shutdown
 
-DECL_CONSTANT("ADC_MAX", 4095); // Assume 12bit adc
+DECL_CONSTANT("ADC_MAX", 1023); // Assume 10bit adc
 
-#define ANALOG_START (1<<12)
+#define ANALOG_START (1<<10)
 
 DECL_ENUMERATION_RANGE("pin", "analog0", ANALOG_START, 8);
 
